@@ -20,7 +20,5 @@ public class Project {
 	private String projectLocation;
 	@ManyToMany(mappedBy = "project")
 	private List<Employee> employee = new ArrayList<>();
-//	@ManyToOne
-//	private Department department;
 
 }

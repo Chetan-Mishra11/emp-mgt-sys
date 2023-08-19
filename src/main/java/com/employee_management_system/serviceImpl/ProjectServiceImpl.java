@@ -74,7 +74,7 @@ public class ProjectServiceImpl implements ProjectService {
 		return projectDTO2;
 	}
 
-	// Project to DTO Converter
+	// DTO to Project converter
 
 	public Project dtoToProject(ProjectDTO projectDTO) {
 
@@ -82,7 +82,7 @@ public class ProjectServiceImpl implements ProjectService {
 		return project;
 	}
 
-	// DTO to Project converter
+	// Project to DTO Converter
 
 	public ProjectDTO ProjectToDTO(Project project) {
 		ProjectDTO projectDTO = this.modelMapper.map(project, ProjectDTO.class);

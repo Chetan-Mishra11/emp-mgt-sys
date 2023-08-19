@@ -77,7 +77,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 		return departmentDTO2;
 	}
 
-	// Department to DTO Converter
+	// DTO to Department converter
 
 	public Department dtoToDepartment(DepartmentDTO departmentDTO) {
 
@@ -85,7 +85,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 		return department;
 	}
 
-	// DTO to Department converter
+	// Department to DTO Converter
 
 	public DepartmentDTO departmentToDTO(Department department) {
 		DepartmentDTO departmentDTO = this.modelMapper.map(department, DepartmentDTO.class);

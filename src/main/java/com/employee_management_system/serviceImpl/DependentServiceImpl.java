@@ -83,7 +83,7 @@ public class DependentServiceImpl implements DependentService {
 
 	}
 
-	// Dependent to DTO Converter
+	// DTO to Dependent converter
 
 	public Dependent dtoToDependent(DependentDTO dependentDTO) {
 
@@ -91,7 +91,7 @@ public class DependentServiceImpl implements DependentService {
 		return dependent;
 	}
 
-	// DTO to Dependent converter
+	// Dependent to DTO Converter
 
 	public DependentDTO dependentToDTO(Dependent dependent) {
 		DependentDTO dependentDTO = this.modelMapper.map(dependent, DependentDTO.class);

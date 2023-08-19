@@ -76,7 +76,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employeeDTO2;
 	}
 
-	// Employee to DTO Converter
+	// DTO to Employee converter
 
 	public Employee dtoToEmployee(EmployeeDTO employeeDTO) {
 
@@ -84,7 +84,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employee;
 	}
 
-	// DTO to Employee converter
+	// Employee to DTO Converter
 
 	public EmployeeDTO employeeToDTO(Employee employee) {
 		EmployeeDTO employeeDTO = this.modelMapper.map(employee, EmployeeDTO.class);
